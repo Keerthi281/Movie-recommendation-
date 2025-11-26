@@ -1,50 +1,36 @@
-Movie Recommendation using collaborative filtering
+ Dataset Information
 
-A machine learning–based movie recommendation system built using collaborative filtering.
-This project suggests movies to users based on their past viewing patterns and similarity to other users.
+The dataset used in this project is *not included* in this repository.  
+You can use *any movie rating or user–item interaction dataset* for collaborative filtering.
 
-Features
+### ✔ Requirements for the dataset
+Your dataset should contain at least these columns:
 
-Collaborative filtering–based recommendation algorithm
+- *user_id* – Unique ID for each user  
+- *item_id / movie_id* – Unique ID for each movie or item  
+- *rating* – User’s rating or preference score  
 
-User–movie interaction matrix
+Example structure:
 
-Data preprocessing (cleaning, scaling, encoding)
+user_id | movie_id | rating  
+--------|----------|--------  
+1       | 10       | 4  
+1       | 22       | 5  
+2       | 10       | 3  
+2       | 33       | 4  
 
-Similarity computation using cosine similarity
+### ✔ Supported datasets  
+You can use any dataset suchas:
 
-Generates Top-N movie recommendations
+- *MovieLens* (highly recommended)  
+- Kaggle movie rating datasets  
+- Your own custom dataset  
 
-Visualizations for data trends
+### ✔ Just change the dataset path  
+This project is *not tied to any specific dataset*.  
+You only need to update the file path in the code:
+### python
+ df=pd.read_csv("your_dataset.csv")
 
-Tech Stack
-
-Python
-
-NumPy
-
-Pandas
-
-Scikit-learn
-
-Matplotlib
-
-Workflow
-
-Load and clean the dataset
-
-Scale features using MinMaxScaler
-
-Build a user-item interaction matrix
-
-Compute similarity scores
-
-Recommend movies for each user
-
- Results
-
-Successfully generated personalized movie suggestions
-
-Improved accuracy through preprocessing and normalization
-
-Performs well even on sparse datasets
+```python
+df = pd.read_csv("your_dataset.csv")
