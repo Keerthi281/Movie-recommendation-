@@ -1,4 +1,4 @@
-Movie Recommendation(collaborative filtering)
+Movie Recommendation using collaborative filtering
 
 A machine learning–based movie recommendation system built using collaborative filtering.
 This project suggests movies to users based on their past viewing patterns and similarity to other users.
